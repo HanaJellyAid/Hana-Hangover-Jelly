@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Byeover</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fffaf7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 8%;
+      background: white;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff6b6b;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 8%;
+      background: linear-gradient(to bottom right, #ffe3dc, #fffaf7);
+    }
+
+    .hero-content h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .hero-content p {
+      font-size: 22px;
+      max-width: 700px;
+      margin: auto;
+      color: #555;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 16px 36px;
+      background: #ff6b6b;
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .hero-btn:hover {
+      background: #ff4d4d;
+    }
+
+    .section {
+      padding: 90px 8%;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: white;
+      padding: 32px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 14px;
+      color: #ff6b6b;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 32px;
+      border-radius: 20px;
+      margin-top: 24px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .cta {
+      background: #ff6b6b;
+      color: white;
+      padding: 100px 8%;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 24px;
+      background: white;
+      color: #ff6b6b;
+      padding: 16px 36px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: white;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 42px;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+      }
+
+      .section h2,
+      .cta h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Byeover</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Benefits</a>
+      <a href="#">Reviews</a>
+      <a href="#">Shop</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Party Hard. Wake Up Easy.</h1>
+
+      <p>
+        Byeover is the viral recovery jelly designed to help you bounce back faster after a night out.
+      </p>
+
+      <a href="#" class="hero-btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why People Love Byeover</h2>
+
+    <div class="benefits">
+
+      <div class="card">
+        <h3>Fast & Convenient</h3>
+        <p>No pills. No mixing powders. Just tear, eat, and sleep.</p>
+      </div>
+
+      <div class="card">
+        <h3>Tastes Amazing</h3>
+        <p>Delicious jelly texture inspired by Asian wellness products.</p>
+      </div>
+
+      <div class="card">
+        <h3>Next-Day Recovery</h3>
+        <p>Made to support hydration and recovery after drinking.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What Everyone’s Saying</h2>
+
+    <div class="testimonial">
+      “This saved my Sunday brunch.”
+      <br><br>
+      — Emily, Los Angeles
+    </div>
+
+    <div class="testimonial">
+      “Honestly tastes way better than hangover drinks.”
+      <br><br>
+      — Jason, New York
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Your Morning-After Insurance</h2>
+
+    <p>Join the next generation of nightlife wellness.</p>
+
+    <a href="#">Get Byeover</a>
+  </section>
+
+  <footer>
+    © 2026 Byeover. All rights reserved.
+  </footer>
+
+</body>
+</html>
